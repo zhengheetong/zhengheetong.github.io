@@ -3,63 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tong Zheng Hee's Resume</title>
-<style>
-.column {
-  float: left;
-  width: 50%;
-}
-
-.column2 {
-  float: left;
-  width: 40%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-p.solid {border-style: solid;}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 90%;
-  border-radius: 5px;
-  display: table;
-  clear: both;
-  background-color: lightgreen;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
-
-.container {
-  padding: 2px 16px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-
-
-
-@media (max-width: 1000px) {
-		.column {
-		  float: left;
-		  width: 100%;
-		}
-}
-</style>
-
-
-
+<link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body style="background-color:powderblue;">
@@ -186,31 +130,5 @@ img {
 		</div>
 	</div>
 </body>
-
-
-<script>
-function toggle(button){
-
-    // this works because the button is immediately after the "moreDetails" element it pertains to
-    let Text = button.previousElementSibling;
-
-    // this would work if you move the button so it is not immediately after moreDetails, but still in the same parent div.
-    //let Text = button.parentElement.querySelector(".moreDetails");
-    
-    if(Text.style.display == "none"){
-        Text.style.display= "block";
-		button.innerHTML= "Show Less";
-    }
-    else {
-        Text.style.display = "none";
-		button.innerHTML= "Show More";
-    }
-}
-
-const moreDetailses = document.querySelectorAll(".moreDetails");
-for (let i = 0; i < moreDetailses.length; i++) {
-  moreDetailses[i].style.display = "none";
-}
-</script>
-
+<script src="myscript.js"></script>
 </html>
