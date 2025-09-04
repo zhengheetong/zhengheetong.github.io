@@ -1,2 +1,1 @@
-
-<link href ="zhengheetong.github.io">Click Here </link>
+[Click Here](zhengheetong.github.io)
