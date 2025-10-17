@@ -39,7 +39,7 @@ if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyS
 var c;
 setInterval(
 c = function() {
-    output.innerText = moment().format(urlParams["format"] || 'MMM DD, YYYY | hh:mm:ssa')
+    output.innerText = moment().format(urlParams["format"] || 'DD/MM/YYYY | (UTC+8) hh:mm:ssa')
 //    output.innerText = moment().format(urlParams["format"] || '');
 }, 1000);
 c();
