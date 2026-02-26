@@ -423,3 +423,63 @@ a:hover {
 @keyframes blink { 50% { opacity: 0; } }
 
 .mermaid svg { width: 100% !important; height: auto !important; }
+
+/* =========================================
+   11. MOBILE RESPONSIVENESS
+========================================= */
+@media screen and (max-width: 850px) {
+    /* Stack columns vertically */
+    .main-wrapper {
+        flex-direction: column;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    /* Release the fixed left column */
+    .left-column {
+        flex: none;
+        width: 100%;
+        position: relative; /* Removes the sticky effect on mobile */
+        top: 0;
+        max-width: 100%;
+    }
+
+    /* Adjust the right column padding */
+    .right-column {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    /* Make the profile image slightly smaller for mobile */
+    .profile-img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .profile-img-container {
+        margin-top: -60px;
+    }
+
+    /* Prevent timeline dates from colliding with school names */
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-header .date {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    
+    /* Make the glitch text adapt nicely */
+    .glitch {
+        font-size: 22px;
+    }
+}
+
+/* Ensure mobile users don't trigger the custom cursor hover states */
+@media (hover: none) and (pointer: coarse) {
+    .cursor-dot, .cursor-outline {
+        display: none !important;
+    }
+}
