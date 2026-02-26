@@ -3,6 +3,7 @@
 [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://en.wikipedia.org/wiki/HTML5)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://en.wikipedia.org/wiki/CSS3)
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://en.wikipedia.org/wiki/JavaScript)
+[![AI Co-Pilot](https://img.shields.io/badge/AI%20Co--Pilot-Google%20Gemini-8A2BE2?style=for-the-badge&logo=googlebard&logoColor=white)](https://gemini.google.com)
 
 Welcome to the repository for my personal portfolio website! This project serves as a digital resume and a showcase of my skills as a Software Engineer. It features a custom-built, highly interactive, dark-mode UI with a cyberpunk aesthetic.
 
@@ -32,5 +33,24 @@ This portfolio was built from scratch without any heavy frameworks, focusing on 
 To run this project on your local machine, no build tools or package managers are required.
 
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/zhengheetong/zhengheetong.github.io.git](https://github.com/zhengheetong/zhengheetong.github.io.git)
+```bash
+git clone https://github.com/zhengheetong/zhengheetong.github.io.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd zhengheetong.github.io
+```
+
+3. Simply open `index.html` in any modern web browser.
+
+## 📬 Connect with Me
+
+* **GitHub:** [zhengheetong](https://github.com/zhengheetong/)
+* **LeetCode:** [zhenghee535](https://leetcode.com/u/zhenghee535/)
+* **Boot.dev:** [tzh535](https://www.boot.dev/u/tzh535)
+
+## 🤝 Credits
+
+* **Engineering & Design:** Tong Zheng Hee
+* **AI Co-Pilot:** Google Gemini
