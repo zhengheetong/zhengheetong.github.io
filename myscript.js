@@ -1,7 +1,7 @@
 /* =========================================
    1. SYSTEM PRELOADER
 ========================================= */
-const bootText = ["INITIALIZING...", "LOADING CORE MODULES...", "ESTABLISHING NEURAL LINK...", "ACCESS GRANTED.", "WELCOME, OPERATOR TONG."];
+const bootText = ["INITIALIZING...", "LOADING CORE MODULES...", "ESTABLISHING NEURAL LINK...", "ACCESS GRANTED.", "WELCOME."];
 function startBoot() {
     const container = document.getElementById('boot-text');
     let i = 0;
