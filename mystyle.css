@@ -193,6 +193,43 @@ a:hover {
     box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3);
 }
 
+/* =========================================
+   Status Badge
+========================================= */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgba(20, 184, 166, 0.1);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    color: #2dd4bf;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 auto 15px auto;
+    width: max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2dd4bf;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #2dd4bf;
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+    0% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(45, 212, 191, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+}
+
 
 /* =========================================
    4. CYBERPUNK GLITCH EFFECT
