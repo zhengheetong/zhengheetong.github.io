@@ -49,7 +49,7 @@ cd zhengheetong.github.io
 * **GitHub:** [zhengheetong](https://github.com/zhengheetong/)
 * **LeetCode:** [zhenghee535](https://leetcode.com/u/zhenghee535/)
 * **Boot.dev:** [tzh535](https://www.boot.dev/u/tzh535)
-* **LinkedIn:** [Tong Zheng Hee](www.linkedin.com/in/tong-zheng-hee-8b0055241)
+* **LinkedIn:** [Tong Zheng Hee](https://www.linkedin.com/in/tong-zheng-hee-8b0055241/)
 
 ## 🤝 Credits
 
