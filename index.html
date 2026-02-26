@@ -1,138 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tong Zheng Hee's Resume</title>
-<link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tong Zheng Hee - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body style="background-color:powderblue;">
-	<div  class ="rows">
-		<div class="column">
-			<div></div>
-			<div class="card">
-				<div class="column">
-					<img src="image.jpeg" alt="Avatar" style="width:100%">
-				</div>
-				<div class="column">
-					<div class="container">
-						<h1>Tong Zheng Hee</h1>
-						<h4>
-						Fresh Graduate Software Engineer<br>
-						Malaysian<br>
-						Negeri Sembilan, Malaysian
-						</h4>
-						<div  class ="rows">
-							<div class="column2">
-								<h4>
-									Gender<br>
-									Age<br>
-									Birthday<br>
-									Phone Number<br>
-									Email<br>
-									Hobbies
-								</h4>
-							</div>
-							<div class="column2">
-								<h4>
-									<span style="font-weight:normal">Male</span><br>
-									<span style="font-weight:normal"><script>document.write(new Date().getFullYear()-2000)</script></span><br>
-									<span style="font-weight:normal">6<sup>th</sup> of June 2000</span><br>
-									<span style="font-weight:normal">+60126197352</span><br>
-									<span style="font-weight:normal">zhenghee535@gmail.com</span><br>
-									<span style="font-weight:normal">Gaming, Movies, Youtube</span>
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<h2>EDUCATION</h2>
-			<p>
-				<span style="font-weight:bold">St. Paul Institution</span><br>
-				2013 – 2017<br><br>
-				<span style="font-weight:bold">St. Paul Institution (Form 6)</span><br>
-				2018 - 2019<br><br>
-				<span style="font-weight:bold">Asia Pacific University (APU)</span><br>
-				(Graduate at June 2024)<br>
-				Bachelor of Software Engineering<br><br>
-				<span style="font-weight:bold">Course:</span><br>
-				<ul>
-					<li>Object Oriented Programming</li>
-					<li>Database and Advanced Database Systems</li>
-					<li>Data Structures</li>
-					<li>Concurrent Programming</li>
-					<li>Advanced Programming Language Concepts</li>
-					<li>Blockchain Development</li>
-				</ul>
-				<span style="font-weight:bold">Final Year Project</span><br>
-				<div class="moreDetails" style="text-align:justify">
-					A system that automatically uploads information of the PC to the internet by using GoogleDrive API. The system can run automatically in background by adding it into the registry key of the computer everytime the pc is booted. The system will then use GoogleDrive API to upload the information with JSON format.
-				</div>
-				<button type="button" onclick="toggle(this)">Show More</button>
-				
-				
-			</p>
-			<hr style="width:100%;text-align:left;margin-left:0">
-			<h2>WORKING EXPERIENCE</h2>
-			
-			<p>
-				<span style="font-weight:bold">Mems Solutions Pte. Ltd. [Asistant Software Engineer/ PLC Programmer]</span><br>
-				January 2025–Mach 2025 <br>
-			</p>
-			<p>
-				<span style="font-weight:bold">Engtex Metal Sdn Bhd [IT Support] (Internship)</span><br>
-				September 2022–November 2022 <br>
-				Created 2 program which are interactive floor map for the company and a program to help IT support of the company to collect PC information  <br><br>
-				<span style="font-weight:bold">Project 1</span><br>
-				<div class="moreDetails" style="text-align:justify">
-					Created a program using C# Language and SQL queries to identify the information of the specs of computer like RAM, Disk Drive, Motherboard, CPU and etc. The information is then saved in the database on the local server.
-				</div>
-				<button type="button" onclick="toggle(this)">Show More</button>
-				<br><br>
-				<span style="font-weight:bold">Project 2</span><br><br>
-				<div class="moreDetails" style="text-align:justify">
-					Created an interactive floor plan and host it using github (<a href="https://github.com/Engtex/Engtex.github.io">link</a>). <br>
-					The floorplan is modified from template found on internet (<a href="https://github.com/codrops/Interactive3DMallMap?tab=readme-ov-file">link</a>). <br>
-					The floorplan is created using SVGPathEditor (<a href="https://yqnn.github.io/svg-path-editor/">link</a>).
-				</div>
-				<button type="button" onclick="toggle(this)">Show More</button>
-			</p>
-			
-			
-			<hr style="width:100%;text-align:left;margin-left:0">
-			<h2>SELF PROJECT</h2>
-			<p>
-				<span style="font-weight:bold">Sudoku Solver</span><br>
-				Created a Sudoku Solver using C# Window Prestation Form (WPF) as my own learning while using my own Solving Logic<br>
-				(<a href="https://github.com/zhengheetong/SudokuSolver">link</a>)<br><br>
-			</p>
-			<p>
-				<span style="font-weight:bold">Boot.dev Project</span><br>
-				<ul>
-					<li><a href="https://github.com/zhengheetong/bookbot">BookBot</a></li>
-					<li><a href="https://github.com/zhengheetong/AsteroidGame">Asteroid Game</a></li>
-					<li><a href="https://github.com/zhengheetong/Static_Site_Generator">Static Site Generator</a></li>
-				</ul>
-			</p>
-			<hr style="width:100%;text-align:left;margin-left:0">
-			<h2>SKILL</h2>
-			<p>
-			<ul>
-				<li><span style="font-weight:bold">Language:</span><br>English, Chinese, Malay</li>
-				<li><span style="font-weight:bold">Programming Language:</span><br>C#, Java, C++, Python, SQL, Go</li>
-				<li><span style="font-weight:bold">Framework:</span><br>.NET, ASP.NET Core, WinForm, WPF, Avalonia, Newtonsoft.JSON</li>
-				<li><span style="font-weight:bold">Tools:</span><br>Visual Studio, Eclipse, NetBeans, Linux, Github, Amazon Web Services (AWS), Microsoft Excel, Copilot, ChatGPT</li>
-				<li><span style="font-weight:bold">SQL:</span><br>Microsoft SQL (SQL Server), MySQL</li>
-				<li><span style="font-weight:bold">Self-Learning:</span><br>Leetcode(<a href = "https://leetcode.com/u/zhenghee535/">Profile</a>), Boot.Dev (<a href = "https://www.boot.dev/u/tzh535">Profile</a>).NET MAUI</li>
-				<li><span style="font-weight:bold">Github Profile:</span><br>(<a href = "https://github.com/zhengheetong/">Link</a>)</li>
-			</ul>
-			</p>
-		</div>
-	</div>
-</body>
-<script src="myscript.js"></script>
-</html>
+<body>
+    <div id="boot-screen">
+        <div id="boot-text"></div>
+    </div>
 
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="main-wrapper">
+        <div class="left-column">
+            <div class="profile-card">
+                <div class="card-banner"></div> 
+                
+                <div class="profile-img-container">
+                    <img src="image.jpeg" alt="Tong Zheng Hee" class="profile-img" id="profile-pic">
+                </div>
+                
+                <div class="profile-info">
+                    <h1 class="glitch-wrapper">
+                        <span class="glitch" data-text="Tong Zheng Hee">Tong Zheng Hee</span>
+                    </h1>
+
+                    <h3 class="title">
+                        <span id="typewriter-text"></span><span class="blinking-cursor">|</span>
+                    </h3>
+                    <p class="location">Negeri Sembilan, Malaysia</p>
+                    
+                    <div class="details-grid">
+                        <div class="detail-label">Gender</div>
+                        <div class="detail-value">Male</div>
+                        
+                        <div class="detail-label">Birthday</div>
+                        <div class="detail-value">6th June 2000</div>
+                        
+                        <div class="detail-label">Phone</div>
+                        <div class="detail-value">+60126197352</div>
+                        
+                        <div class="detail-label">Email</div>
+                        <div class="detail-value"><a href="mailto:zhenghee535@gmail.com">zhenghee535@gmail.com</a></div>
+                        
+                        <div class="detail-label">Hobbies</div>
+                        <div class="detail-value">Gaming, Movies, YouTube</div>
+                    </div>
+
+                    <a href="Resume.pdf" download="Tong_Zheng_Hee_Resume.pdf" class="download-btn">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+			<section class="resume-section reveal">
+                <h2>Education</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="institution">Asia Pacific University</span>
+                        <span class="date">Graduated June 2024</span>
+                    </div>
+                    <div class="degree">Bachelor of Software Engineering</div>
+                    
+                    <div class="project-box">
+                        <strong>Final Year Project: PC Info Cloud Uploader</strong>
+                        <div class="moreDetails">
+                            <p style="margin-bottom: 15px; margin-top: 10px;">Further developed a project from my internship into a system that automatically uploads PC information to the internet using the Google Drive API. It runs in the background via registry keys on boot and uploads data in JSON format.</p>
+                            
+                            <div class="mermaid" style="text-align: center; margin-bottom: 15px;">
+                                flowchart LR
+                                    A[PC Boots Up] --> B(Background Process)
+                                    B --> C{Extract PC Specs}
+                                    C --> D[Format Data to JSON]
+                                    D --> E[(Google Drive Cloud)]
+                                    
+                                    style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                                    style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                                    style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                                    style D fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                                    style E fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+                            </div>
+                        </div>
+                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="institution">St. Paul’s Institution</span>
+                        <span class="date">2018 – 2019</span>
+                    </div>
+                    <div class="degree">Sijil Tinggi Persekolahan Malaysia (STPM)</div>
+                    <p class="text-small">Major in Physics</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="institution">St. Paul’s Institution</span>
+                        <span class="date">2013 – 2017</span>
+                    </div>
+                    <div class="degree">Sijil Pelajaran Malaysia (SPM)</div>
+                    <p class="text-small">Science Stream</p>
+                </div>
+            </section>
+
+            <section class="resume-section reveal">
+                <h2>Work Experience</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="institution">Mems Solution Ltd</span>
+                        <span class="date">Jan 2025 – Mar 2025</span>
+                    </div>
+                    <div class="role">Assistant Software Engineer / PLC Programming</div>
+                    <p class="text-small">Developed a program using C# to extract data from Omron PLCs.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <span class="institution">Engtex Metal Sdn Bhd</span>
+                        <span class="date">Sep 2022 – Nov 2022</span>
+                    </div>
+                    <div class="role">IT Support (Internship)</div>
+                    <p class="text-small">Completed two core projects assigned by the COO and Head of Department.</p>
+                    
+                    <div class="project-box">
+                        <strong>Project 1: PC Info Collector</strong>
+                        <div class="moreDetails">
+                            <p style="margin-top: 10px;">Created a tool to identify and store PC hardware specifications in a database.</p>
+                        </div>
+                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+                    </div>
+
+                    <div class="project-box">
+                        <strong>Project 2: Interactive Floor Plan</strong>
+                        <div class="moreDetails">
+                            <p style="margin-top: 10px;">Designed and hosted an interactive office floor plan on GitHub.</p>
+                        </div>
+                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section reveal">
+                <h2>Own Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card-mini">
+                        <strong>Sudoku Solver</strong>
+                        <p>A C# WPF application built with custom solving logic. (Version 1.0)</p>
+                        <a href="https://github.com/zhengheetong/SudokuSolver" target="_blank">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card-mini">
+                        <strong>Bookbot</strong>
+                        <p>A Python-based text analysis tool. (Boot.dev Project)</p>
+                        <a href="https://github.com/zhengheetong/bookbot" target="_blank">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card-mini">
+                        <strong>Asteroid Game</strong>
+                        <p>A classic arcade clone developed in Python. (Boot.dev Project)</p>
+                        <a href="https://github.com/zhengheetong/AsteroidGame" target="_blank">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card-mini">
+                        <strong>Static Site Gen</strong>
+                        <p>A custom static site generator. (Boot.dev Project)</p>
+                        <a href="https://github.com/zhengheetong/Static_Site_Generator" target="_blank">View Code &rarr;</a>
+                    </div>
+                    <div class="project-card-mini">
+                        <strong>Maze Solver</strong>
+                        <p>Algorithm to navigate and solve complex mazes. (Boot.dev Project)</p>
+                        <a href="https://github.com/zhengheetong/" target="_blank">View Code &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resume-section reveal">
+                <h2>Skills & Profiles</h2>
+                <div class="skill-group">
+                    <strong>Languages</strong>
+                    <div class="tags">
+                        <span>English</span><span>Chinese</span><span>Malay</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <strong>Programming Languages</strong>
+                    <div class="tags">
+                        <span>C#</span><span>Java</span><span>C++</span><span>C</span><span>Python</span><span>SQL</span><span>Golang</span><span>JavaScript</span><span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <strong>Frameworks</strong>
+                    <div class="tags">
+                        <span>.NET</span><span>ASP.NET Core</span><span>WinForm</span><span>WPF</span><span>Avalonia</span><span>Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <strong>Databases (SQL)</strong>
+                    <div class="tags">
+                        <span>Microsoft SQL</span><span>MySQL</span><span>SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <strong>Tools</strong>
+                    <div class="tags">
+                        <span>Visual Studio</span><span>Eclipse</span><span>NetBeans</span><span>GitHub</span><span>Linux</span><span>AWS</span><span>Microsoft Excel</span>
+                    </div>
+                </div>
+                
+                <div class="skill-group" style="margin-top: 30px;">
+                    <strong>Internet Profiles</strong>
+                    <div class="tags actionable-links">
+                        <a href="https://github.com/zhengheetong/" target="_blank"><span>GitHub</span></a>
+                        <a href="https://leetcode.com/u/zhenghee535/" target="_blank"><span>LeetCode</span></a>
+                        <a href="https://www.boot.dev/u/tzh535" target="_blank"><span>Boot.dev</span></a>
+                        <a href="#" target="_blank"><span>LinkedIn</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="myscript.js"></script>
+    
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+	
+	
+</body>
+</html>
