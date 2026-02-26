@@ -123,14 +123,35 @@
                 <h2>Work Experience</h2>
                 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">Mems Solution Ltd</span>
-                        <span class="date">Jan 2025 – Mar 2025</span>
-                    </div>
-                    <div class="role">Assistant Software Engineer / PLC Programming</div>
-                    <p class="text-small">Developed a program using C# to extract data from Omron PLCs.</p>
-                </div>
+					<div class="timeline-dot"></div>
+					<div class="timeline-header">
+						<span class="institution">Mems Solution Ltd</span>
+						<span class="date">Jan 2025 – Mar 2025</span>
+					</div>
+					<div class="role">Assistant Software Engineer / PLC Programming</div>
+					
+					<div class="project-box">
+						<strong>Project: PLC SQL Control & Reporter</strong>
+						<div class="moreDetails">
+							<p style="margin-bottom: 15px; margin-top: 10px;">Created a C# WPF application to view real-time data extracted from Omron PLCs. The system maps PLC data structures directly into an SQL Server database, where the C# program can filter, view, and generate comprehensive CSV reports (Raw, Summary, and Calibration).</p>
+							
+							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
+								flowchart LR
+									A[Omron PLC] -->|Inserts Data| B[(SQL Server DB)]
+									B --> C{C# WPF App}
+									C --> D[Real-Time Viewer]
+									C --> E[Generate CSV Reports]
+									
+									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style B fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+									style D fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
+							</div>
+						</div>
+						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+					</div>
+				</div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -139,23 +160,48 @@
                         <span class="date">Sep 2022 – Nov 2022</span>
                     </div>
                     <div class="role">IT Support (Internship)</div>
-                    <p class="text-small">Completed two core projects assigned by the COO and Head of Department.</p>
                     
                     <div class="project-box">
-                        <strong>Project 1: PC Info Collector</strong>
-                        <div class="moreDetails">
-                            <p style="margin-top: 10px;">Created a tool to identify and store PC hardware specifications in a database.</p>
-                        </div>
-                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-                    </div>
+						<strong>Project 1: PC Info Collector</strong>
+						<div class="moreDetails">
+							<p style="margin-bottom: 15px; margin-top: 10px;">Created a background tool tasked by the Head of Department to automatically identify and store PC hardware specifications directly into a centralized database.</p>
+							
+							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
+								flowchart LR
+									A[PC Boots Up] --> B(Background Process)
+									B --> C{Extract PC Specs}
+									C --> D[(Central Database)]
+									
+									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+									style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+							</div>
+						</div>
+						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+					</div>
 
                     <div class="project-box">
-                        <strong>Project 2: Interactive Floor Plan</strong>
-                        <div class="moreDetails">
-                            <p style="margin-top: 10px;">Designed and hosted an interactive office floor plan on GitHub.</p>
-                        </div>
-                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-                    </div>
+						<strong>Project 2: Interactive Floor Plan</strong>
+						<div class="moreDetails">
+							<p style="margin-bottom: 15px; margin-top: 10px;">Designed an interactive office floor plan. The process involved converting the physical floor plan into an SVG, hard-coding the interactive elements for the website, and utilizing Google Drive to host the employee images linked within the site before hosting the final build on GitHub.</p>
+							
+							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
+								flowchart LR
+									A[Physical Floor Plan] --> B(Convert to SVG)
+									B --> C{Hard-Code Web App}
+									D[(Google Drive)] -->|Host Employee Images| C
+									C --> E[Host on GitHub Pages]
+									
+									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+									style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+									style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
+							</div>
+						</div>
+						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+					</div>
                 </div>
             </section>
 
@@ -191,48 +237,60 @@
             </section>
 
             <section class="resume-section reveal">
-                <h2>Skills & Profiles</h2>
-                <div class="skill-group">
-                    <strong>Languages</strong>
-                    <div class="tags">
-                        <span>English</span><span>Chinese</span><span>Malay</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <strong>Programming Languages</strong>
-                    <div class="tags">
-                        <span>C#</span><span>Java</span><span>C++</span><span>C</span><span>Python</span><span>SQL</span><span>Golang</span><span>JavaScript</span><span>TypeScript</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <strong>Frameworks</strong>
-                    <div class="tags">
-                        <span>.NET</span><span>ASP.NET Core</span><span>WinForm</span><span>WPF</span><span>Avalonia</span><span>Node.js</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <strong>Databases (SQL)</strong>
-                    <div class="tags">
-                        <span>Microsoft SQL</span><span>MySQL</span><span>SQLite</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <strong>Tools</strong>
-                    <div class="tags">
-                        <span>Visual Studio</span><span>Eclipse</span><span>NetBeans</span><span>GitHub</span><span>Linux</span><span>AWS</span><span>Microsoft Excel</span>
-                    </div>
-                </div>
-                
-                <div class="skill-group" style="margin-top: 30px;">
-                    <strong>Internet Profiles</strong>
-                    <div class="tags actionable-links">
-                        <a href="https://github.com/zhengheetong/" target="_blank"><span>GitHub</span></a>
-                        <a href="https://leetcode.com/u/zhenghee535/" target="_blank"><span>LeetCode</span></a>
-                        <a href="https://www.boot.dev/u/tzh535" target="_blank"><span>Boot.dev</span></a>
-                        <a href="https://www.linkedin.com/in/tong-zheng-hee-8b0055241" target="_blank"><span>LinkedIn</span></a>
-                    </div>
-                </div>
-            </section>
+				<h2>Skills & Profiles</h2>
+				
+				<div class="skill-group">
+					<strong>Backend & Core Languages</strong>
+					<div class="tags">
+						<span>C#</span><span>Java</span><span>Python</span><span>Golang</span><span>C++</span><span>C</span>
+					</div>
+				</div>
+				
+				<div class="skill-group">
+					<strong>Web & Frontend</strong>
+					<div class="tags">
+						<span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<strong>Frameworks & UI</strong>
+					<div class="tags">
+						<span>.NET</span><span>ASP.NET Core</span><span>WPF</span><span>WinForms</span><span>Avalonia</span><span>Node.js</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<strong>Databases</strong>
+					<div class="tags">
+						<span>Microsoft SQL Server</span><span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<strong>Infrastructure & Tools</strong>
+					<div class="tags">
+						<span>Git / GitHub</span><span>AWS</span><span>Linux</span><span>Visual Studio</span>
+					</div>
+				</div>
+
+				<div class="skill-group">
+					<strong>Spoken Languages</strong>
+					<div class="tags">
+						<span>English</span><span>Chinese</span><span>Malay</span>
+					</div>
+				</div>
+				
+				<div class="skill-group" style="margin-top: 30px;">
+					<strong>Internet Profiles</strong>
+					<div class="tags actionable-links">
+						<a href="https://github.com/zhengheetong/" target="_blank"><span>GitHub</span></a>
+						<a href="https://leetcode.com/u/zhenghee535/" target="_blank"><span>LeetCode</span></a>
+						<a href="https://www.boot.dev/u/tzh535" target="_blank"><span>Boot.dev</span></a>
+						<a href="https://www.linkedin.com/in/tong-zheng-hee-8b0055241" target="_blank"><span>LinkedIn</span></a>
+					</div>
+				</div>
+			</section>
         </div>
     </div>
 
