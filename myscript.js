@@ -138,27 +138,3 @@ document.querySelectorAll('.profile-card, .project-card-mini').forEach(card => {
     });
     card.addEventListener('mouseleave', () => card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale3d(1,1,1)`);
 });
-
-/* =========================================
-   7. POPULATE BOOT.DEV CERTIFICATES
-========================================= */
-const certsContainer = document.getElementById('boot-certs-container');
-
-// Check if the container exists and the data.js array loaded properly
-if (certsContainer && typeof myBootCert !== 'undefined') {
-    myBootCert.forEach(certUrl => {
-        const img = document.createElement('img');
-        img.src = certUrl;
-        img.alt = "Boot.dev Course Certificate";
-        img.className = "cert-img";
-        img.loading = "lazy"; // Improves performance by deferring image loading
-        
-        // Optional: Open full image in new tab on click
-        img.style.cursor = "pointer";
-        img.addEventListener('click', () => {
-            window.open(certUrl, '_blank');
-        });
-
-        certsContainer.appendChild(img);
-    });
-}
