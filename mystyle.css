@@ -551,6 +551,47 @@ a:hover {
     }
 }
 
+/* =========================================
+   12. CERTIFICATE SCROLL GALLERY
+========================================= */
+.certs-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+/* Custom Cyberpunk Scrollbar for the gallery */
+.certs-scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+.certs-scroll-container::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 4px;
+}
+.certs-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.cert-img {
+    height: 160px; /* Forces a uniform height for all certificates */
+    width: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-img:hover {
+    transform: scale(1.03);
+    border-color: var(--primary);
+}
+
 /* Ensure mobile users don't trigger the custom cursor hover states */
 @media (hover: none) and (pointer: coarse) {
     .cursor-dot, .cursor-outline {
