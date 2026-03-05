@@ -117,7 +117,18 @@
                             </ul>
 
                             <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">Certificates Earned:</p>
-                            <div id="boot-certs-container" class="certs-scroll-container"></div>
+                            <div class="cert-carousel-container">
+                                <div class="cert-carousel-header">
+                                    <span class="cert-count" id="cert-count">Loading data...</span>
+                                </div>
+                                <div class="cert-carousel-body">
+                                    <button id="cert-prev" class="cert-btn">&lt; PREV</button>
+                                    <div class="cert-img-wrapper">
+                                        <img id="cert-active-img" src="" alt="Boot.dev Certificate" title="Click to view full size" />
+                                    </div>
+                                    <button id="cert-next" class="cert-btn">NEXT &gt;</button>
+                                </div>
+                            </div>
                         </div>
                         <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
                     </div>
@@ -357,8 +368,13 @@
         </div>
     </div>
 
-    <script src="data.js"></script>
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Enlarged Certificate">
+    </div>
 
+
+    <script src="data.js"></script>
     <script src="myscript.js"></script>
     
     <script type="module">

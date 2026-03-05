@@ -124,7 +124,7 @@ if(dot && out) {
         dot.style.left = out.style.left = `${e.clientX}px`;
         dot.style.top = out.style.top = `${e.clientY}px`;
     });
-    document.querySelectorAll('a, button, .profile-img').forEach(l => {
+    document.querySelectorAll('a, button, .profile-img, .modal-close, #cert-active-img').forEach(l => {
         l.addEventListener('mouseenter', () => out.classList.add('active'));
         l.addEventListener('mouseleave', () => out.classList.remove('active'));
     });
@@ -137,4 +137,78 @@ document.querySelectorAll('.profile-card, .project-card-mini').forEach(card => {
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
     });
     card.addEventListener('mouseleave', () => card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale3d(1,1,1)`);
+});
+
+/* =========================================
+   7. CERTIFICATE CAROUSEL LOGIC
+========================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const activeImg = document.getElementById('cert-active-img');
+    const countText = document.getElementById('cert-count');
+    const btnPrev = document.getElementById('cert-prev');
+    const btnNext = document.getElementById('cert-next');
+
+    // Make sure elements exist and data.js loaded the array
+    if (activeImg && typeof myBootCert !== 'undefined' && myBootCert.length > 0) {
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            // Slight fade out effect
+            activeImg.style.opacity = 0;
+            
+            setTimeout(() => {
+                activeImg.src = myBootCert[currentIndex];
+                // Terminal style counter
+                countText.textContent = `SYSTEM.CERT_ARCHIVE [ ${currentIndex + 1} / ${myBootCert.length} ]`;
+                activeImg.style.opacity = 1; // Fade back in
+            }, 150);
+        }
+
+        // Initialize the first image
+        updateCarousel();
+
+        // Setup Modal Elements
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const span = document.querySelector('.modal-close');
+
+        // Modify the click event to open the modal instead of a new tab
+        activeImg.addEventListener('click', () => {
+            if (modal && modalImg) {
+                modal.style.display = "block";
+                modalImg.src = myBootCert[currentIndex];
+            }
+        });
+
+        // Close the modal when clicking the 'X'
+        if (span) {
+            span.addEventListener('click', () => {
+                modal.style.display = "none";
+            });
+        }
+
+        // Close the modal when clicking anywhere outside the image
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target !== modalImg) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+
+        // Previous Button
+        btnPrev.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? myBootCert.length - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        // Next Button
+        btnNext.addEventListener('click', () => {
+            currentIndex = (currentIndex === myBootCert.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+    } else if (countText) {
+        countText.textContent = "Error: Certificate data offline.";
+        countText.style.color = "red";
+    }
 });
