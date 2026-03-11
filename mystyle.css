@@ -575,9 +575,16 @@ a:hover {
 
 .cert-carousel-body {
     display: flex;
+    flex-direction: column; /* Stacks image and buttons vertically */
     align-items: center;
-    justify-content: space-between;
     gap: 15px;
+}
+
+.cert-carousel-controls {
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Space between PREV and NEXT */
+    width: 100%;
 }
 
 .cert-btn {
@@ -600,17 +607,17 @@ a:hover {
 }
 
 .cert-img-wrapper {
-    flex: 1;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px; /* Prevents layout jumping when images load */
+    min-height: 220px;
 }
 
 #cert-active-img {
     max-width: 100%;
-    max-height: 220px;
+    max-height: 320px; /* Increased from 220px to make it bigger */
     object-fit: contain;
     border-radius: 4px;
     border: 1px solid var(--border-color);
