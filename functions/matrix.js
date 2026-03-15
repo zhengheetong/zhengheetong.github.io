@@ -40,20 +40,8 @@ function drawMatrix() {
         drops[i]++;
     }
 }
-// --- 3. TRIGGER THE ANIMATION ---
-// Check if the boot screen exists on the page
-if (document.getElementById('boot-screen')) {
-    // If it does, wait for the preloader to finish before starting
-    window.addEventListener('preloaderComplete', () => {
-        setInterval(drawMatrix, 35);
-    });
-} else {
-    // Fallback: If you ever remove the preloader from your HTML, 
-    // the matrix will just start immediately so it doesn't break.
-    setInterval(drawMatrix, 35);
-}
+setInterval(drawMatrix, 35);
 
-// Keep your resize listener at the very bottom
 window.addEventListener('resize', () => {
     matrixCanvas.width = window.innerWidth;
     matrixCanvas.height = window.innerHeight;

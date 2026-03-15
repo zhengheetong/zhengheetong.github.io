@@ -29,11 +29,7 @@ function startBoot() {
                 const screen = document.getElementById('boot-screen');
                 if(screen) {
                     screen.style.opacity = '0';
-                    setTimeout(() => {
-                        screen.style.display = 'none';
-                        // 1. DISPATCH THE CUSTOM EVENT HERE
-                        window.dispatchEvent(new Event('preloaderComplete'));
-                    }, 1000);
+                    setTimeout(() => screen.style.display = 'none', 1000);
                 }
             }, 800);
         }
