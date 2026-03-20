@@ -77,12 +77,6 @@
                         <a href="https://leetcode.com/u/zhenghee535/" target="_blank" rel="noopener noreferrer" title="LeetCode" class="social-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                         </a>
-                        <a href="https://www.boot.dev/u/tzh535" target="_blank" rel="noopener noreferrer" title="Boot.dev" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                <text x="12" y="15.5" font-family="Georgia, serif" font-size="10.5" font-weight="bold" text-anchor="middle" fill="currentColor" stroke="none" letter-spacing="-0.5">BD</text>
-                            </svg>
-                        </a>
                     </div>
 
                     <a href="assets/Resume.pdf" download="Tong_Zheng_Hee_Resume.pdf" class="download-btn">
@@ -102,21 +96,17 @@
                         <span class="date">Mar 2025 – Mar 2026</span>
                     </div>
                     <div class="degree">Backend Engineering & Computer Science Track</div>
+                    
                     <p class="text-small" style="color: var(--text-muted); margin-bottom: 10px; font-weight: 500;">
                         Level 11 Grandmaster • 1,848+ Lessons Solved
                     </p>
                     
+                    <a href="https://www.boot.dev/u/tzh535" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; margin-bottom: 15px; display: inline-block;">
+                        Boot.dev Profile &rarr;
+                    </a>
                     <div class="project-box">
                         <strong>Core Competencies & Achievements</strong>
                         <div class="moreDetails">
-                            <p style="margin-bottom: 10px; margin-top: 10px;">Completed 16 rigorous courses and 8 practical projects focusing on backend architecture, system design, and advanced programming concepts.</p>
-                            
-                            <ul style="list-style-position: inside; margin-bottom: 15px; color: var(--text-muted); font-size: 14px; line-height: 1.8;">
-                                <li><strong>Languages & Tools:</strong> Go, Python, TypeScript, C, SQL, Docker, Linux, Git</li>
-                                <li><strong>Key Concepts:</strong> Data Structures & Algorithms, Memory Management, HTTP Servers/Clients, OOP & Functional Programming</li>
-                                <li><strong>Notable Projects:</strong> Blog Aggregator Microservice (Go), AI Agent CLI (Python), Pokedex REPL (Go), Static Site Generator (Python)</li>
-                            </ul>
-
                             <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">Certificates Earned:</p>
                             <div class="cert-carousel-container">
                                 <div class="cert-carousel-header">
@@ -135,6 +125,15 @@
                             </div>
                         </div>
                         <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+                    </div>
+
+                    <div class="project-box">
+                        <strong>Boot.dev Projects</strong>
+                        <div class="moreDetails">
+                            <div id="dynamic-boot-grid" class="project-grid"></div>
+                        </div>
+                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+                        <div></div>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -282,7 +281,7 @@
 
             <section class="resume-section reveal">
 				<h2>Skills</h2>
-				<div id="dynamic-skill-group" class="skill-group"></div>
+				<div id="dynamic-skill-group"></div>
 			</section>
         </div>
     </div>
@@ -294,8 +293,12 @@
 
 
     <script src="assets/data.js"></script>
-    
     <script src="myscript.js"></script>
+    
+    <script src="section-generator/projects.js"></script>
+    <script src="section-generator/skills.js"></script>
+
+
 
     <script src="functions/matrix.js"></script>
     <script src="functions/typewriter.js"></script>
@@ -303,8 +306,6 @@
     <script src="functions/cursor.js"></script>
     <script src="functions/carousel.js"></script>
     
-    <script src="section-generator/projects.js"></script>
-    <script src="section-generator/skills.js"></script>
     
     
     <script type="module">
