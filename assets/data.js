@@ -67,5 +67,28 @@ const myProjects = [
 ];
 
 const mySkills = [
-
+	{
+		title: "Backend & Core Languages",
+		list: [ "C#", "Java", "Kotlin", "Python", "Golang", "C++", "C"]
+	},
+	{
+		title: "Web & Frontend",
+		list: [ "JavaScript", "TypeScript", "HTML5", "CSS3"]
+	},
+	{
+		title: "Frameworks & UI",
+		list: [ ".NET", "ASP.NET Core", "Android SDK", "WPF", "WinForms", "Avalonia", "Node.js"]
+	},
+	{
+		title: "Databases",
+		list: [ "Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite"]
+	},
+	{
+		title: "Infrastructure & Tools",
+		list: [ "Git / GitHub", "Docker", "AWS (S3/CloudFront)", "Linux", "Visual Studio"] 
+	},
+	{
+		title: "Spoken Languages",
+		list: [ "English", "Chinese", "Malay"]
+	}
 ];
