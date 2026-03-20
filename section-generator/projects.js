@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('project-card-mini', 'reveal');
             
-            // 1. Always create the Code link
             let linksHTML = "" ;
             
-            // 2. If a Live Demo link exists, add it directly below the Code link
             if (project.demoLink) {
                 linksHTML += `<a href="${project.demoLink}" target="_blank" style="color: var(--accent); margin-top: 8px; display: inline-block;">Live Demo &rarr;</a>`;
                 linksHTML += `<span style="margin: 0 5px; color: var(--text-muted);">|</span>`;
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 linksHTML += `<a href="${project.link}" target="_blank">View Code &rarr;</a>`;
             }
             
-            // 3. Inject everything into the card
             card.innerHTML = `
                 <strong>${project.title}</strong>
                 <p>${project.description}</p>

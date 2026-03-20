@@ -65,3 +65,7 @@ const myProjects = [
         link: "https://github.com/zhengheetong/Maze_Solver"
     }
 ];
+
+const mySkills = [
+
+];
