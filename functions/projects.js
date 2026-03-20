@@ -1,0 +1,34 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const projectContainer = document.getElementById('dynamic-project-grid');
+    
+    if (projectContainer && typeof myProjects !== 'undefined') {
+        myProjects.forEach(project => {
+            const card = document.createElement('div');
+            card.classList.add('project-card-mini', 'reveal');
+            
+            // 1. Always create the Code link
+            let linksHTML = "" ;
+            
+            // 2. If a Live Demo link exists, add it directly below the Code link
+            if (project.demoLink) {
+                linksHTML += `<a href="${project.demoLink}" target="_blank" style="color: var(--accent); margin-top: 8px; display: inline-block;">Live Demo &rarr;</a>`;
+                linksHTML += `<span style="margin: 0 5px; color: var(--text-muted);">|</span>`;
+                linksHTML += `<a href="${project.link}" target="_blank"style="font-size: 13px; color: var(--text-muted);">Code</a>`;
+            }
+            else {
+                linksHTML += `<a href="${project.link}" target="_blank">View Code &rarr;</a>`;
+            }
+            
+            // 3. Inject everything into the card
+            card.innerHTML = `
+                <strong>${project.title}</strong>
+                <p>${project.description}</p>
+                <div class="project-links" style="margin-top: 10px; font-size: 14px;">
+                    ${linksHTML}
+                </div>
+            `;
+            
+            projectContainer.appendChild(card);
+        });
+    }
+});

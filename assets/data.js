@@ -17,3 +17,51 @@ const myBootCert = [
     "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/f7759cfb-feaf-4688-9730-792b57c35989.jpeg",
 ];
 
+const myProjects = [
+    {
+        title: "Cyberpunk Sudoku (Web)",
+        description: "A web-based Sudoku solver featuring Neural Net image scanning (OCR) and visual logic algorithms.",
+        demoLink: "https://zhengheetong.github.io/Sudoku-App/",
+        link: "https://github.com/zhengheetong/Sudoku-App"
+    },
+    {
+        title: "Sudoku Solver (Desktop)",
+        description: "A C# WPF application built with custom solving logic. (Version 1.0)",
+        link: "https://github.com/zhengheetong/SudokuSolver"
+    },
+    {
+        title: "X Video Downloader",
+        description: "A lightweight Chrome extension that seamlessly injects a native download button into X (Twitter) to fetch and save videos via the vxTwitter API.",
+        link: "https://github.com/zhengheetong/x-video-dl"
+    },
+    {
+        title: "Cyber-X Downloader",
+        description: "A cyberpunk-themed Android app to extract and archive MP4s from X, built with a custom OkHttp network engine.",
+        link: "https://github.com/zhengheetong/X_Video_Downloader"
+    },
+    {
+        title: "FB Video Downloader",
+        description: "A native Kotlin Android app with a custom media player, live progress tracking, and gallery integration using OkHttp.",
+        link: "https://github.com/zhengheetong/Facebook_Video_Downloader"
+    },
+    {
+        title: "Bookbot",
+        description: "A Python-based text analysis tool. (Boot.dev Project)",
+        link: "https://github.com/zhengheetong/bookbot"
+    },
+    {
+        title: "Asteroid Game",
+        description: "A classic arcade clone developed in Python. (Boot.dev Project)",
+        link: "https://github.com/zhengheetong/AsteroidGame"
+    },
+    {
+        title: "Static Site Gen",
+        description: "A custom static site generator. (Boot.dev Project)",
+        link: "https://github.com/zhengheetong/Static_Site_Generator"
+    },
+    {
+        title: "Maze Solver",
+        description: "Algorithm to navigate and solve complex mazes. (Boot.dev Project)",
+        link: "https://github.com/zhengheetong/Maze_Solver"
+    }
+];
