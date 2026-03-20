@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.classList.add('skill-group');
             
-            // 1. Always create the Code link
+            // 1. initialize an empty string to hold the list of skills for this category
             let listSkill = ``;
             
-            // 2. If a Live Demo link exists, add it directly below the Code link
+            // 2. Loop through the skill list and create a span for each skill, appending it to the listSkill string
             skill.list.forEach(element => {
                 listSkill += `<span>${element}</span>`;
             });
             
-            // 3. Inject everything into the card
+            // 3. Set the innerHTML of the card to include the skill category title and the list of skills
             card.innerHTML = `
                 <strong>${skill.title}</strong>
                 <div class="tags">
