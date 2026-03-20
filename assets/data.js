@@ -43,7 +43,10 @@ const myProjects = [
         title: "FB Video Downloader",
         description: "A native Kotlin Android app with a custom media player, live progress tracking, and gallery integration using OkHttp.",
         link: "https://github.com/zhengheetong/Facebook_Video_Downloader"
-    },
+    }    
+];
+
+const bootProjects = [
     {
         title: "Bookbot",
         description: "A Python-based text analysis tool. (Boot.dev Project)",
@@ -65,6 +68,7 @@ const myProjects = [
         link: "https://github.com/zhengheetong/Maze_Solver"
     }
 ];
+
 
 const mySkills = [
 	{
