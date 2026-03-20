@@ -29,3 +29,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const bootContainer = document.getElementById('dynamic-boot-grid');
+    
+    if (bootContainer && typeof bootProjects !== 'undefined') {
+        bootProjects.forEach(project => {
+            const card = document.createElement('div');
+            card.classList.add('project-card-mini', 'reveal');
+            
+            let linksHTML = `<a href="${project.link}" target="_blank">View Code &rarr;</a>` ;
+            
+            card.innerHTML = `
+                <strong>${project.title}</strong>
+                <p>${project.description}</p>
+                <div class="project-links" style="margin-top: 10px; font-size: 14px;">
+                    ${linksHTML}
+                </div>
+            `;
+            
+            bootContainer.appendChild(card);
+        });
+    }
+});
