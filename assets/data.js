@@ -81,7 +81,7 @@ const mySkills = [
 	},
 	{
 		title: "Frameworks & UI",
-		list: [ ".NET", "ASP.NET Core", "Android SDK", "WPF", "WinForms", "Avalonia", "Node.js"]
+		list: [ ".NET", "ASP.NET Core", "Android SDK", "WPF", "WinForms", "Avalonia", "Node.js", "React.js"] // <-- Added React.js
 	},
 	{
 		title: "Databases",
@@ -89,7 +89,7 @@ const mySkills = [
 	},
 	{
 		title: "Infrastructure & Tools",
-		list: [ "Git / GitHub", "Docker", "AWS (S3/CloudFront)", "Linux", "Visual Studio"] 
+		list: [ "Git / GitHub", "Docker", "AWS (S3/CloudFront)", "Linux", "Visual Studio", "Vite"] // <-- Added Vite
 	},
 	{
 		title: "Spoken Languages",
