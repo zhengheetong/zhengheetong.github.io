@@ -25,6 +25,12 @@ const myProjects = [
         link: "https://github.com/zhengheetong/Sudoku-App"
     },
     {
+        title: "Interactive Floor Plan (Web)",
+        description: "A React.js application that dynamically loads floor data from JSON files to render an interactive mall map with store icons and a sidebar.",
+        demoLink: "https://zhengheetong.github.io/Floor-Plan-Management/",
+        link: "https://github.com/zhengheetong/Floor-Plan-Management"
+    },
+    {
         title: "Sudoku Solver (Desktop)",
         description: "A C# WPF application built with custom solving logic. (Version 1.0)",
         link: "https://github.com/zhengheetong/SudokuSolver"
