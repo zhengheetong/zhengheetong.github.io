@@ -1,104 +1,127 @@
-const myBootCert = [
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/87254722-5a84-473e-812d-d20f5f7f33ab.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/9028fea2-470c-442a-88a6-cca997ad0d69.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/b181a7a8-1772-4ea0-b4f1-5caee5ba262d.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/23afa8fb-4701-4b78-ab4f-a864d59fb7f4.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/dafad8ed-3ab6-4de1-9468-7bcac93a3713.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/6291fabc-d06d-4e03-92dd-4fb26158841b.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/45399803-8bdd-4b56-8817-7761a7870c2d.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/3731109d-c67c-4ac6-8f37-41d5332a4f52.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/39d134dd-74ad-4513-9f24-e5696901a6e1.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/3f2eba4c-527b-4ed1-8a68-f3227b2d9fe2.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/d3f6b5f1-eca0-4974-b3f0-8c9f74c5e8d4.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/8c84cd98-ae15-4e16-b478-0b25af1c9ea7.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/faf85477-fe2b-4bf3-8d71-28aa506ced55.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/74854a87-0878-428b-8bbb-413eb7679cf6.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/abec6428-98e5-46d6-ba8f-429e9b07d9d9.jpeg",
-    "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/f7759cfb-feaf-4688-9730-792b57c35989.jpeg",
+export const myBootCert = [
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/87254722-5a84-473e-812d-d20f5f7f33ab.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/9028fea2-470c-442a-88a6-cca997ad0d69.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/b181a7a8-1772-4ea0-b4f1-5caee5ba262d.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/23afa8fb-4701-4b78-ab4f-a864d59fb7f4.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/dafad8ed-3ab6-4de1-9468-7bcac93a3713.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/6291fabc-d06d-4e03-92dd-4fb26158841b.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/45399803-8bdd-4b56-8817-7761a7870c2d.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/3731109d-c67c-4ac6-8f37-41d5332a4f52.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/39d134dd-74ad-4513-9f24-e5696901a6e1.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/3f2eba4c-527b-4ed1-8a68-f3227b2d9fe2.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/d3f6b5f1-eca0-4974-b3f0-8c9f74c5e8d4.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/8c84cd98-ae15-4e16-b478-0b25af1c9ea7.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/faf85477-fe2b-4bf3-8d71-28aa506ced55.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/74854a87-0878-428b-8bbb-413eb7679cf6.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/abec6428-98e5-46d6-ba8f-429e9b07d9d9.jpeg",
+  "https://qvault-webapp-dynamic-assets.storage.googleapis.com/certificates/f7759cfb-feaf-4688-9730-792b57c35989.jpeg",
 ];
 
-const myProjects = [
-    {
-        title: "Cyberpunk Sudoku (Web)",
-        description: "A web-based Sudoku solver featuring Neural Net image scanning (OCR) and visual logic algorithms.",
-        demoLink: "https://zhengheetong.github.io/Sudoku-App/",
-        link: "https://github.com/zhengheetong/Sudoku-App"
-    },
-    {
-        title: "Interactive Floor Plan (Web)",
-        description: "A React.js application that dynamically loads floor data from JSON files to render an interactive mall map with store icons and a sidebar.",
-        demoLink: "https://zhengheetong.github.io/Floor-Plan-Management/",
-        link: "https://github.com/zhengheetong/Floor-Plan-Management"
-    },
-    {
-        title: "Sudoku Solver (Desktop)",
-        description: "A C# WPF application built with custom solving logic. (Version 1.0)",
-        link: "https://github.com/zhengheetong/SudokuSolver"
-    },
-    {
-        title: "X Video Downloader",
-        description: "A lightweight Chrome extension that seamlessly injects a native download button into X (Twitter) to fetch and save videos via the vxTwitter API.",
-        link: "https://github.com/zhengheetong/x-video-dl"
-    },
-    {
-        title: "Cyber-X Downloader",
-        description: "A cyberpunk-themed Android app to extract and archive MP4s from X, built with a custom OkHttp network engine.",
-        link: "https://github.com/zhengheetong/X_Video_Downloader"
-    },
-    {
-        title: "FB Video Downloader",
-        description: "A native Kotlin Android app with a custom media player, live progress tracking, and gallery integration using OkHttp.",
-        link: "https://github.com/zhengheetong/Facebook_Video_Downloader"
-    }    
+export const myProjects = [
+  {
+    title: "Cyberpunk Sudoku (Web)",
+    description:
+      "A web-based Sudoku solver featuring Neural Net image scanning (OCR) and visual logic algorithms.",
+    demoLink: "https://zhengheetong.github.io/Sudoku-App/",
+    link: "https://github.com/zhengheetong/Sudoku-App",
+  },
+  {
+    title: "Interactive Floor Plan (Web)",
+    description:
+      "A React.js application that dynamically loads floor data from JSON files to render an interactive mall map with store icons and a sidebar.",
+    demoLink: "https://zhengheetong.github.io/Floor-Plan-Management/",
+    link: "https://github.com/zhengheetong/Floor-Plan-Management",
+  },
+  {
+    title: "Sudoku Solver (Desktop)",
+    description:
+      "A C# WPF application built with custom solving logic. (Version 1.0)",
+    link: "https://github.com/zhengheetong/SudokuSolver",
+  },
+  {
+    title: "X Video Downloader",
+    description:
+      "A lightweight Chrome extension that seamlessly injects a native download button into X (Twitter) to fetch and save videos via the vxTwitter API.",
+    link: "https://github.com/zhengheetong/x-video-dl",
+  },
+  {
+    title: "Cyber-X Downloader",
+    description:
+      "A cyberpunk-themed Android app to extract and archive MP4s from X, built with a custom OkHttp network engine.",
+    link: "https://github.com/zhengheetong/X_Video_Downloader",
+  },
+  {
+    title: "FB Video Downloader",
+    description:
+      "A native Kotlin Android app with a custom media player, live progress tracking, and gallery integration using OkHttp.",
+    link: "https://github.com/zhengheetong/Facebook_Video_Downloader",
+  },
 ];
 
-const bootProjects = [
-    {
-        title: "Bookbot",
-        description: "A Python-based text analysis tool. (Boot.dev Project)",
-        link: "https://github.com/zhengheetong/bookbot"
-    },
-    {
-        title: "Asteroid Game",
-        description: "A classic arcade clone developed in Python. (Boot.dev Project)",
-        link: "https://github.com/zhengheetong/AsteroidGame"
-    },
-    {
-        title: "Static Site Gen",
-        description: "A custom static site generator. (Boot.dev Project)",
-        link: "https://github.com/zhengheetong/Static_Site_Generator"
-    },
-    {
-        title: "Maze Solver",
-        description: "Algorithm to navigate and solve complex mazes. (Boot.dev Project)",
-        link: "https://github.com/zhengheetong/Maze_Solver"
-    }
+export const bootProjects = [
+  {
+    title: "Bookbot",
+    description: "A Python-based text analysis tool. (Boot.dev Project)",
+    link: "https://github.com/zhengheetong/bookbot",
+  },
+  {
+    title: "Asteroid Game",
+    description:
+      "A classic arcade clone developed in Python. (Boot.dev Project)",
+    link: "https://github.com/zhengheetong/AsteroidGame",
+  },
+  {
+    title: "Static Site Gen",
+    description: "A custom static site generator. (Boot.dev Project)",
+    link: "https://github.com/zhengheetong/Static_Site_Generator",
+  },
+  {
+    title: "Maze Solver",
+    description:
+      "Algorithm to navigate and solve complex mazes. (Boot.dev Project)",
+    link: "https://github.com/zhengheetong/Maze_Solver",
+  },
 ];
 
-
-const mySkills = [
-	{
-		title: "Backend & Core Languages",
-		list: [ "C#", "Java", "Kotlin", "Python", "Golang", "C++", "C"]
-	},
-	{
-		title: "Web & Frontend",
-		list: [ "JavaScript", "TypeScript", "HTML5", "CSS3"]
-	},
-	{
-		title: "Frameworks & UI",
-		list: [ ".NET", "ASP.NET Core", "Android SDK", "WPF", "WinForms", "Avalonia", "Node.js", "React.js"] // <-- Added React.js
-	},
-	{
-		title: "Databases",
-		list: [ "Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite"]
-	},
-	{
-		title: "Infrastructure & Tools",
-		list: [ "Git / GitHub", "Docker", "AWS (S3/CloudFront)", "Linux", "Visual Studio", "Vite"] // <-- Added Vite
-	},
-	{
-		title: "Spoken Languages",
-		list: [ "English", "Chinese", "Malay"]
-	}
+export const mySkills = [
+  {
+    title: "Backend & Core Languages",
+    list: ["C#", "Java", "Kotlin", "Python", "Golang", "C++", "C"],
+  },
+  {
+    title: "Web & Frontend",
+    list: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+  },
+  {
+    title: "Frameworks & UI",
+    list: [
+      ".NET",
+      "ASP.NET Core",
+      "Android SDK",
+      "WPF",
+      "WinForms",
+      "Avalonia",
+      "Node.js",
+      "React.js",
+    ], // <-- Added React.js
+  },
+  {
+    title: "Databases",
+    list: ["Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite"],
+  },
+  {
+    title: "Infrastructure & Tools",
+    list: [
+      "Git / GitHub",
+      "Docker",
+      "AWS (S3/CloudFront)",
+      "Linux",
+      "Visual Studio",
+      "Vite",
+    ], // <-- Added Vite
+  },
+  {
+    title: "Spoken Languages",
+    list: ["English", "Chinese", "Malay"],
+  },
 ];

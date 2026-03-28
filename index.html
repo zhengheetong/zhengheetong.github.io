@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tong Zheng Hee - Software Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><polygon points='32,4 60,20 60,44 32,60 4,44 4,20' fill='%230f172a' stroke='%2314b8a6' stroke-width='6'/><circle cx='32' cy='32' r='8' fill='%2314b8a6'/></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mystyle.css">
-</head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><polygon points='32,4 60,20 60,44 32,60 4,44 4,20' fill='%230f172a' stroke='%2314b8a6' stroke-width='6'/><circle cx='32' cy='32' r='8' fill='%2314b8a6'/></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
 
-<body>
+  <body>
     <div id="boot-screen">
-        <div id="boot-text"></div>
+      <div id="boot-text"></div>
     </div>
 
     <canvas id="matrix-bg"></canvas>
@@ -22,298 +32,439 @@
     <div class="cursor-outline"></div>
 
     <div class="main-wrapper">
-        <div class="left-column">
-            <div class="profile-card">
-                <div class="card-banner"></div> 
-                
-                <div class="profile-img-container">
-                    <img src="assets/image.jpeg" alt="Tong Zheng Hee" class="profile-img" id="profile-pic">
-                </div>
-                
-                <div class="profile-info">
-                    <h1 class="glitch-wrapper">
-                        <span class="glitch" data-text="Tong Zheng Hee">Tong Zheng Hee</span>
-                    </h1>
+      <div class="left-column">
+        <div class="profile-card">
+          <div class="card-banner"></div>
 
-                    <h3 class="title">
-                        <span id="typewriter-text"></span><span class="blinking-cursor">|</span>
-                    </h3>
-                    <p class="location">Negeri Sembilan, Malaysia</p>
-					
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        Open to Opportunities
-                    </div>
-					
-                    <div class="details-grid">
-                        <div class="detail-label">Gender</div>
-                        <div class="detail-value">Male</div>
-                        
-                        <div class="detail-label">Birthday</div>
-                        <div class="detail-value">6<sup>th</sup> June 2000</div>
-                        
-                        <div class="detail-label">Phone</div>
-						<div class="detail-value" style="display: flex; align-items: center; gap: 8px;">
-							+60126197352
-							<a href="https://wa.me/60126197352" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" style="display: flex; align-items: center; color: var(--accent); transition: transform 0.2s ease;">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-									<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-								</svg>
-							</a>
-						</div>
-                        
-                        <div class="detail-label">Email</div>
-                        <div class="detail-value"><a href="mailto:zhenghee535@gmail.com">zhenghee535@gmail.com</a></div>
-                        
-                    </div>
+          <div class="profile-img-container">
+            <img
+              src="assets/image.jpeg"
+              alt="Tong Zheng Hee"
+              class="profile-img"
+              id="profile-pic"
+            />
+          </div>
 
-                    <div class="social-links">
-                        <a href="https://github.com/zhengheetong/" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tong-zheng-hee-8b0055241/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="https://leetcode.com/u/zhenghee535/" target="_blank" rel="noopener noreferrer" title="LeetCode" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                        </a>
-                    </div>
+          <div class="profile-info">
+            <h1 class="glitch-wrapper">
+              <span class="glitch" data-text="Tong Zheng Hee"
+                >Tong Zheng Hee</span
+              >
+            </h1>
 
-                    <a href="assets/Resume.pdf" download="Tong_Zheng_Hee_Resume.pdf" class="download-btn">
-                        Download Resume
-                    </a>
-                </div>
+            <h3 class="title">
+              <span id="typewriter-text"></span
+              ><span class="blinking-cursor">|</span>
+            </h3>
+            <p class="location">Negeri Sembilan, Malaysia</p>
+
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Open to Opportunities
             </div>
+
+            <div class="details-grid">
+              <div class="detail-label">Gender</div>
+              <div class="detail-value">Male</div>
+
+              <div class="detail-label">Birthday</div>
+              <div class="detail-value">6<sup>th</sup> June 2000</div>
+
+              <div class="detail-label">Phone</div>
+              <div
+                class="detail-value"
+                style="display: flex; align-items: center; gap: 8px"
+              >
+                +60126197352
+                <a
+                  href="https://wa.me/60126197352"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Chat on WhatsApp"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: var(--accent);
+                    transition: transform 0.2s ease;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    onmouseover="this.style.transform = 'scale(1.1)'"
+                    onmouseout="this.style.transform = 'scale(1)'"
+                  >
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="detail-label">Email</div>
+              <div class="detail-value">
+                <a href="mailto:zhenghee535@gmail.com">zhenghee535@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/zhengheetong/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tong-zheng-hee-8b0055241/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a
+                href="https://leetcode.com/u/zhenghee535/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LeetCode"
+                class="social-icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <a
+              href="assets/Resume.pdf"
+              download="Tong_Zheng_Hee_Resume.pdf"
+              class="download-btn"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
+      </div>
 
-        <div class="right-column">
-			<section class="resume-section reveal">
-                <h2>Education</h2>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">Boot.dev</span>
-                        <span class="date">Mar 2025 – Mar 2026</span>
-                    </div>
-                    <div class="degree">Backend Engineering & Computer Science Track</div>
-                    
-                    <p class="text-small" style="color: var(--text-muted); margin-bottom: 10px; font-weight: 500;">
-                        Level 11 Grandmaster • 1,848+ Lessons Solved
-                    </p>
-                    
-                    <a href="https://www.boot.dev/u/tzh535" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; margin-bottom: 15px; display: inline-block;">
-                        Boot.dev Profile &rarr;
-                    </a>
-                    <div class="project-box">
-                        <strong>Core Competencies & Achievements</strong>
-                        <div class="moreDetails">
-                            <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px;">Certificates Earned:</p>
-                            <div class="cert-carousel-container">
-                                <div class="cert-carousel-header">
-                                    <span class="cert-count" id="cert-count">Loading data...</span>
-                                </div>
-                                <div class="cert-carousel-body">
-                                    <div class="cert-img-wrapper">
-                                        <img id="cert-active-img" src="" alt="Boot.dev Certificate" title="Click to view full size" />
-                                    </div>
-                                    
-                                    <div class="cert-carousel-controls">
-                                        <button id="cert-prev" class="cert-btn">&lt; PREV</button>
-                                        <button id="cert-next" class="cert-btn">NEXT &gt;</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
+      <div class="right-column">
+        <section class="resume-section reveal">
+          <h2>Education</h2>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">Boot.dev</span>
+              <span class="date">Mar 2025 – Mar 2026</span>
+            </div>
+            <div class="degree">
+              Backend Engineering & Computer Science Track
+            </div>
+
+            <p
+              class="text-small"
+              style="
+                color: var(--text-muted);
+                margin-bottom: 10px;
+                font-weight: 500;
+              "
+            >
+              Level 11 Grandmaster • 1,848+ Lessons Solved
+            </p>
+
+            <a
+              href="https://www.boot.dev/u/tzh535"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="
+                color: var(--accent);
+                font-weight: 600;
+                margin-bottom: 15px;
+                display: inline-block;
+              "
+            >
+              Boot.dev Profile &rarr;
+            </a>
+            <div class="project-box">
+              <strong>Core Competencies & Achievements</strong>
+              <div class="moreDetails">
+                <p style="color: #ffffff; font-weight: 600; margin-bottom: 8px">
+                  Certificates Earned:
+                </p>
+                <div class="cert-carousel-container">
+                  <div class="cert-carousel-header">
+                    <span class="cert-count" id="cert-count"
+                      >Loading data...</span
+                    >
+                  </div>
+                  <div class="cert-carousel-body">
+                    <div class="cert-img-wrapper">
+                      <img
+                        id="cert-active-img"
+                        src=""
+                        alt="Boot.dev Certificate"
+                        title="Click to view full size"
+                      />
                     </div>
 
-                    <div class="project-box">
-                        <strong>Boot.dev Projects</strong>
-                        <div class="moreDetails">
-                            <div id="dynamic-boot-grid" class="project-grid"></div>
-                        </div>
-                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-                        <div></div>
+                    <div class="cert-carousel-controls">
+                      <button id="cert-prev" class="cert-btn">&lt; PREV</button>
+                      <button id="cert-next" class="cert-btn">NEXT &gt;</button>
                     </div>
+                  </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">Asia Pacific University</span>
-                        <span class="date">Graduated June 2024</span>
-                    </div>
-                    <div class="degree">Bachelor of Software Engineering</div>
-                    
-                    <div class="project-box">
-                        <strong>Final Year Project: PC Info Cloud Uploader</strong>
-                        <div class="moreDetails">
-                            <p style="margin-bottom: 15px; margin-top: 10px;">Further developed a project from my internship into a system that automatically uploads PC information to the internet using the Google Drive API. It runs in the background via registry keys on boot and uploads data in JSON format.</p>
-                            
-                            <div class="mermaid" style="text-align: center; margin-bottom: 15px;">
-                                flowchart LR
-                                    A[PC Boots Up] --> B(Background Process)
-                                    B --> C{Extract PC Specs}
-                                    C --> D[Format Data to JSON]
-                                    D --> E[(Google Drive Cloud)]
-                                    
-                                    style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                                    style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                                    style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
-                                    style D fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
-                                    style E fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
-                            </div>
-                        </div>
-                        <button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-                    </div>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+            </div>
+
+            <div class="project-box">
+              <strong>Boot.dev Projects</strong>
+              <div class="moreDetails">
+                <div id="dynamic-boot-grid" class="project-grid"></div>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+              <div></div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">Asia Pacific University</span>
+              <span class="date">Graduated June 2024</span>
+            </div>
+            <div class="degree">Bachelor of Software Engineering</div>
+
+            <div class="project-box">
+              <strong>Final Year Project: PC Info Cloud Uploader</strong>
+              <div class="moreDetails">
+                <p style="margin-bottom: 15px; margin-top: 10px">
+                  Further developed a project from my internship into a system
+                  that automatically uploads PC information to the internet
+                  using the Google Drive API. It runs in the background via
+                  registry keys on boot and uploads data in JSON format.
+                </p>
+
+                <div
+                  class="mermaid"
+                  style="text-align: center; margin-bottom: 15px"
+                >
+                  flowchart LR A[PC Boots Up] --> B(Background Process) B -->
+                  C{Extract PC Specs} C --> D[Format Data to JSON] D -->
+                  E[(Google Drive Cloud)] style A
+                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
+                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C
+                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
+                  D fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                  style E fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
                 </div>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+            </div>
+          </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">St. Paul’s Institution</span>
-                        <span class="date">2018 – 2019</span>
-                    </div>
-                    <div class="degree">Sijil Tinggi Persekolahan Malaysia (STPM)</div>
-                    <p class="text-small">Major in Physics</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">St. Paul’s Institution</span>
+              <span class="date">2018 – 2019</span>
+            </div>
+            <div class="degree">Sijil Tinggi Persekolahan Malaysia (STPM)</div>
+            <p class="text-small">Major in Physics</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">St. Paul’s Institution</span>
+              <span class="date">2013 – 2017</span>
+            </div>
+            <div class="degree">Sijil Pelajaran Malaysia (SPM)</div>
+            <p class="text-small">Science Stream</p>
+          </div>
+        </section>
+
+        <section class="resume-section reveal">
+          <h2>Work Experience</h2>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">Mems Solution Ltd</span>
+              <span class="date">Jan 2025 – Mar 2025</span>
+            </div>
+            <div class="role">
+              Assistant Software Engineer / PLC Programming
+            </div>
+
+            <div class="project-box">
+              <strong>Project: PLC SQL Control & Reporter</strong>
+              <div class="moreDetails">
+                <p style="margin-bottom: 15px; margin-top: 10px">
+                  Created a C# WPF application to view real-time data extracted
+                  from Omron PLCs. The system maps PLC data structures directly
+                  into an SQL Server database, where the C# program can filter,
+                  view, and generate comprehensive CSV reports (Raw, Summary,
+                  and Calibration).
+                </p>
+
+                <div
+                  class="mermaid"
+                  style="text-align: center; margin-bottom: 15px"
+                >
+                  flowchart LR A[Omron PLC] -->|Inserts Data| B[(SQL Server DB)]
+                  B --> C{C# WPF App} C --> D[Real-Time Viewer] C --> E[Generate
+                  CSV Reports] style A
+                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
+                  B fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff style C
+                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
+                  D fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style E
+                  fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
                 </div>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+            </div>
+          </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">St. Paul’s Institution</span>
-                        <span class="date">2013 – 2017</span>
-                    </div>
-                    <div class="degree">Sijil Pelajaran Malaysia (SPM)</div>
-                    <p class="text-small">Science Stream</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <span class="institution">Engtex Metal Sdn Bhd</span>
+              <span class="date">Sep 2022 – Nov 2022</span>
+            </div>
+            <div class="role">IT Support (Internship)</div>
+
+            <div class="project-box">
+              <strong>Project 1: PC Info Collector</strong>
+              <div class="moreDetails">
+                <p style="margin-bottom: 15px; margin-top: 10px">
+                  Created a background tool tasked by the Head of Department to
+                  automatically identify and store PC hardware specifications
+                  directly into a centralized database.
+                </p>
+
+                <div
+                  class="mermaid"
+                  style="text-align: center; margin-bottom: 15px"
+                >
+                  flowchart LR A[PC Boots Up] --> B(Background Process) B -->
+                  C{Extract PC Specs} C --> D[(Central Database)] style A
+                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
+                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C
+                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
+                  D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
                 </div>
-            </section>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+            </div>
 
-            <section class="resume-section reveal">
-                <h2>Work Experience</h2>
-                
-                <div class="timeline-item">
-					<div class="timeline-dot"></div>
-					<div class="timeline-header">
-						<span class="institution">Mems Solution Ltd</span>
-						<span class="date">Jan 2025 – Mar 2025</span>
-					</div>
-					<div class="role">Assistant Software Engineer / PLC Programming</div>
-					
-					<div class="project-box">
-						<strong>Project: PLC SQL Control & Reporter</strong>
-						<div class="moreDetails">
-							<p style="margin-bottom: 15px; margin-top: 10px;">Created a C# WPF application to view real-time data extracted from Omron PLCs. The system maps PLC data structures directly into an SQL Server database, where the C# program can filter, view, and generate comprehensive CSV reports (Raw, Summary, and Calibration).</p>
-							
-							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
-								flowchart LR
-									A[Omron PLC] -->|Inserts Data| B[(SQL Server DB)]
-									B --> C{C# WPF App}
-									C --> D[Real-Time Viewer]
-									C --> E[Generate CSV Reports]
-									
-									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style B fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
-									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
-									style D fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
-							</div>
-						</div>
-						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-					</div>
-				</div>
+            <div class="project-box">
+              <strong>Project 2: Interactive Floor Plan</strong>
+              <div class="moreDetails">
+                <p style="margin-bottom: 15px; margin-top: 10px">
+                  Designed an interactive office floor plan. The process
+                  involved converting the physical floor plan into an SVG,
+                  hard-coding the interactive elements for the website, and
+                  utilizing Google Drive to host the employee images linked
+                  within the site before hosting the final build on GitHub.
+                </p>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <span class="institution">Engtex Metal Sdn Bhd</span>
-                        <span class="date">Sep 2022 – Nov 2022</span>
-                    </div>
-                    <div class="role">IT Support (Internship)</div>
-                    
-                    <div class="project-box">
-						<strong>Project 1: PC Info Collector</strong>
-						<div class="moreDetails">
-							<p style="margin-bottom: 15px; margin-top: 10px;">Created a background tool tasked by the Head of Department to automatically identify and store PC hardware specifications directly into a centralized database.</p>
-							
-							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
-								flowchart LR
-									A[PC Boots Up] --> B(Background Process)
-									B --> C{Extract PC Specs}
-									C --> D[(Central Database)]
-									
-									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
-									style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
-							</div>
-						</div>
-						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-					</div>
-
-                    <div class="project-box">
-						<strong>Project 2: Interactive Floor Plan</strong>
-						<div class="moreDetails">
-							<p style="margin-bottom: 15px; margin-top: 10px;">Designed an interactive office floor plan. The process involved converting the physical floor plan into an SVG, hard-coding the interactive elements for the website, and utilizing Google Drive to host the employee images linked within the site before hosting the final build on GitHub.</p>
-							
-							<div class="mermaid" style="text-align: center; margin-bottom: 15px;">
-								flowchart LR
-									A[Physical Floor Plan] --> B(Convert to SVG)
-									B --> C{Hard-Code Web App}
-									D[(Google Drive)] -->|Host Employee Images| C
-									C --> E[Host on GitHub Pages]
-									
-									style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-									style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
-									style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
-									style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
-							</div>
-						</div>
-						<button class="toggle-btn" type="button" onclick="toggle(this)">Show More</button>
-					</div>
+                <div
+                  class="mermaid"
+                  style="text-align: center; margin-bottom: 15px"
+                >
+                  flowchart LR A[Physical Floor Plan] --> B(Convert to SVG) B
+                  --> C{Hard-Code Web App} D[(Google Drive)] -->|Host Employee
+                  Images| C C --> E[Host on GitHub Pages] style A
+                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
+                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C
+                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
+                  D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff style E
+                  fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
                 </div>
-            </section>
+              </div>
+              <button class="toggle-btn" type="button" onclick="toggle(this)">
+                Show More
+              </button>
+            </div>
+          </div>
+        </section>
 
-            <section class="resume-section reveal">
-                <h2>Own Projects</h2>
-                <div id="dynamic-project-grid" class="project-grid"></div>
-            </section>
+        <section class="resume-section reveal">
+          <h2>Own Projects</h2>
+          <div id="dynamic-project-grid" class="project-grid"></div>
+        </section>
 
-            <section class="resume-section reveal">
-				<h2>Skills</h2>
-				<div id="dynamic-skill-group"></div>
-			</section>
-        </div>
+        <section class="resume-section reveal">
+          <h2>Skills</h2>
+          <div id="dynamic-skill-group"></div>
+        </section>
+      </div>
     </div>
 
     <div id="image-modal" class="modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modal-img" alt="Enlarged Certificate">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Enlarged Certificate" />
     </div>
 
+    <script type="module" src="assets/js/main.js"></script>
 
-    <script src="assets/data.js"></script>
-    <script src="myscript.js"></script>
-    
-    <script src="section-generator/projects.js"></script>
-    <script src="section-generator/skills.js"></script>
-
-
-
-    <script src="functions/matrix.js"></script>
-    <script src="functions/typewriter.js"></script>
-    <script src="functions/preloader.js"></script>
-    <script src="functions/cursor.js"></script>
-    <script src="functions/carousel.js"></script>
-    
-    
-    
     <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true, theme: "dark" });
     </script>
-	
-	
-</body>
-
+  </body>
 </html>

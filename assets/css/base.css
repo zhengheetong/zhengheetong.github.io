@@ -1,0 +1,118 @@
+/* =========================================
+   BASE STYLES & STRUCTURAL LAYOUT
+========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.main-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.left-column {
+  flex: 0 0 350px;
+  position: sticky;
+  top: 40px;
+}
+
+.right-column {
+  flex: 1;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+}
+
+.mermaid svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS MEDIA QUERIES
+========================================= */
+@media screen and (max-width: 850px) {
+  /* Stack columns vertically */
+  .main-wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  /* Release the fixed left column */
+  .left-column {
+    flex: none;
+    width: 100%;
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+
+  /* Adjust the right column padding */
+  .right-column {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  /* Make the profile image slightly smaller for mobile */
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-img-container {
+    margin-top: -60px;
+  }
+
+  /* Prevent timeline dates from colliding with school names */
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-header .date {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  /* Make the glitch text adapt nicely */
+  .glitch {
+    font-size: 22px;
+  }
+}
+
+/* Ensure mobile users don't trigger custom cursor hover states */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+}

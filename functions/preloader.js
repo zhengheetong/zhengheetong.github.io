@@ -1,4 +1,4 @@
-const preloaderStyle = document.createElement('style');
+const preloaderStyle = document.createElement("style");
 preloaderStyle.innerHTML = `
     #boot-screen {
         position: fixed;
@@ -14,26 +14,32 @@ preloaderStyle.innerHTML = `
 `;
 document.head.appendChild(preloaderStyle);
 
-const bootText = ["INITIALIZING...", "LOADING CORE MODULES...", "ESTABLISHING NEURAL LINK...", "ACCESS GRANTED.", "WELCOME."];
+const bootText = [
+  "INITIALIZING...",
+  "LOADING CORE MODULES...",
+  "ESTABLISHING NEURAL LINK...",
+  "ACCESS GRANTED.",
+  "WELCOME.",
+];
 function startBoot() {
-    const container = document.getElementById('boot-text');
-    let i = 0;
-    function print() {
-        if (i < bootText.length) {
-            const d = document.createElement('div');
-            d.textContent = `> ${bootText[i++]}`;
-            container.appendChild(d);
-            setTimeout(print, 400);
-        } else {
-            setTimeout(() => {
-                const screen = document.getElementById('boot-screen');
-                if(screen) {
-                    screen.style.opacity = '0';
-                    setTimeout(() => screen.style.display = 'none', 1000);
-                }
-            }, 800);
+  const container = document.getElementById("boot-text");
+  let i = 0;
+  function print() {
+    if (i < bootText.length) {
+      const d = document.createElement("div");
+      d.textContent = `> ${bootText[i++]}`;
+      container.appendChild(d);
+      setTimeout(print, 400);
+    } else {
+      setTimeout(() => {
+        const screen = document.getElementById("boot-screen");
+        if (screen) {
+          screen.style.opacity = "0";
+          setTimeout(() => (screen.style.display = "none"), 1000);
         }
+      }, 800);
     }
-    print();
+  }
+  print();
 }
-window.addEventListener('load', startBoot);
+window.addEventListener("load", startBoot);

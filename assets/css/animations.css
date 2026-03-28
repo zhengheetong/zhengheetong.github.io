@@ -1,0 +1,84 @@
+/* =========================================
+   ANIMATIONS & EFFECTS
+========================================= */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(45, 212, 191, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+}
+
+/* =========================================
+   CYBERPUNK GLITCH EFFECT
+========================================= */
+.glitch-wrapper {
+  text-align: center;
+}
+.glitch {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--card-bg);
+}
+.glitch:hover::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00c1;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.glitch:hover::after {
+  left: -2px;
+  text-shadow: -2px 0 #00fff9;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim {
+  0% { clip: rect(10px, 9999px, 20px, 0); }
+  100% { clip: rect(80px, 9999px, 90px, 0); }
+}
+@keyframes glitch-anim2 {
+  0% { clip: rect(30px, 9999px, 40px, 0); }
+  100% { clip: rect(60px, 9999px, 70px, 0); }
+}
+
+/* =========================================
+   SCROLL REVEAL EFFECT
+========================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================
+   MODAL ZOOM ANIMATION
+========================================= */
+@keyframes zoom {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

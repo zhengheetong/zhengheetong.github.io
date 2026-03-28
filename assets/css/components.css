@@ -1,0 +1,400 @@
+/* =========================================
+   UI COMPONENTS 
+   Contains specific module styling for cards, buttons, modals, and the timeline.
+========================================= */
+
+/* =========================================
+   PROFILE SIDEBAR CARD
+========================================= */
+.profile-card {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card-banner {
+  height: 100px;
+  background: var(--gradient);
+  width: 100%;
+}
+
+.profile-img-container {
+  margin-top: -80px;
+  margin-bottom: 15px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--card-bg);
+  object-fit: cover;
+  background-color: var(--card-bg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.profile-info {
+  padding: 0 24px 24px;
+  text-align: left;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.location {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  row-gap: 12px;
+  font-size: 14px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.detail-value {
+  color: var(--text-main);
+}
+
+/* =========================================
+   SOCIAL ICONS 
+========================================= */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(15, 23, 42, 0.4);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: rgba(20, 184, 166, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3);
+}
+
+/* =========================================
+   OPEN TO WORK STATUS BADGE
+========================================= */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  color: #2dd4bf;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 auto 15px auto;
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #2dd4bf;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #2dd4bf;
+  animation: pulse-dot 2s infinite;
+}
+
+/* =========================================
+   RESUME DOWNLOAD BUTTON
+========================================= */
+.download-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  background: var(--gradient);
+  color: #ffffff !important;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.6);
+  text-decoration: none;
+}
+
+/* =========================================
+   RESUME TIMELINE & SECTIONS
+========================================= */
+.resume-section {
+  margin-bottom: 40px;
+}
+
+.resume-section h2 {
+  font-size: 20px;
+  color: #ffffff;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-color);
+  transition: border-color 0.5s ease;
+}
+
+.timeline-item.active-line {
+  border-left: 2px solid var(--accent);
+  box-shadow: -5px 0 15px rgba(20, 184, 166, 0.3);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--border-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.active-line .timeline-dot {
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.institution {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 600;
+  color: #60a5fa;
+  background-color: rgba(59, 130, 246, 0.15);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.degree,
+.role {
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+/* =========================================
+   PROJECT SHOWCASE CARDS
+========================================= */
+.project-box {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 8px 8px 0;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.project-box strong {
+  color: #ffffff;
+}
+
+.moreDetails {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.toggle-btn {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: var(--gradient);
+  color: #fff;
+  border-color: transparent;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.project-card-mini {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 8px;
+  transition:
+    transform 0.1s ease-out,
+    border-color 0.2s;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.project-card-mini strong {
+  color: #ffffff;
+}
+
+.project-card-mini p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.project-card-mini:hover {
+  border-color: var(--primary);
+}
+
+/* =========================================
+   SKILLS TAGS 
+========================================= */
+.tags span {
+  font-size: 13px;
+  background-color: rgba(20, 184, 166, 0.15);
+  color: #2dd4bf;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  display: inline-block;
+  margin: 4px;
+}
+
+.tags.actionable-links span {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tags.actionable-links a:hover span {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   IMAGE MODAL / LIGHTBOX
+========================================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(20, 184, 166, 0.4);
+  animation: zoom 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: var(--text-muted);
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
