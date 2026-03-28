@@ -288,18 +288,17 @@
                   registry keys on boot and uploads data in JSON format.
                 </p>
 
-                <div
-                  class="mermaid"
-                  style="text-align: center; margin-bottom: 15px"
-                >
-                  flowchart LR A[PC Boots Up] --> B(Background Process) B -->
-                  C{Extract PC Specs} C --> D[Format Data to JSON] D -->
-                  E[(Google Drive Cloud)] style A
-                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
-                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                  style C
-                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
-                  D fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                <!-- prettier-ignore -->
+                <div class="mermaid" style="text-align: center; margin-bottom: 15px">
+                  flowchart LR
+                  A[PC Boots Up] --> B(Background Process)
+                  B --> C{Extract PC Specs}
+                  C --> D[Format Data to JSON]
+                  D --> E[(Google Drive Cloud)]
+                  style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                  style D fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
                   style E fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
                 </div>
               </div>
@@ -354,19 +353,18 @@
                   and Calibration).
                 </p>
 
-                <div
-                  class="mermaid"
-                  style="text-align: center; margin-bottom: 15px"
-                >
-                  flowchart LR A[Omron PLC] -->|Inserts Data| B[(SQL Server DB)]
-                  B --> C{C# WPF App} C --> D[Real-Time Viewer] C --> E[Generate
-                  CSV Reports] style A
-                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
-                  B fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff style C
-                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
-                  D fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                  style E
-                  fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
+                <!-- prettier-ignore -->
+                <div class="mermaid" style="text-align: center; margin-bottom: 15px">
+                  flowchart LR
+                  A[Omron PLC] -->|Inserts Data| B[(SQL Server DB)]
+                  B --> C{C# WPF App}
+                  C --> D[Real-Time Viewer]
+                  C --> E[Generate CSV Reports]
+                  style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style B fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+                  style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                  style D fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
                 </div>
               </div>
               <button class="toggle-btn" type="button" onclick="toggle(this)">
@@ -392,17 +390,16 @@
                   directly into a centralized database.
                 </p>
 
-                <div
-                  class="mermaid"
-                  style="text-align: center; margin-bottom: 15px"
-                >
-                  flowchart LR A[PC Boots Up] --> B(Background Process) B -->
-                  C{Extract PC Specs} C --> D[(Central Database)] style A
-                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
-                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                  style C
-                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
-                  D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+                <!-- prettier-ignore -->
+                <div class="mermaid" style="text-align: center; margin-bottom: 15px">
+                  flowchart LR
+                  A[PC Boots Up] --> B(Background Process)
+                  B --> C{Extract PC Specs}
+                  C --> D[(Central Database)]
+                  style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                  style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
                 </div>
               </div>
               <button class="toggle-btn" type="button" onclick="toggle(this)">
@@ -421,19 +418,18 @@
                   within the site before hosting the final build on GitHub.
                 </p>
 
-                <div
-                  class="mermaid"
-                  style="text-align: center; margin-bottom: 15px"
-                >
-                  flowchart LR A[Physical Floor Plan] --> B(Convert to SVG) B
-                  --> C{Hard-Code Web App} D[(Google Drive)] -->|Host Employee
-                  Images| C C --> E[Host on GitHub Pages] style A
-                  fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff style
-                  B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-                  style C
-                  fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff style
-                  D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff style E
-                  fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
+                <!-- prettier-ignore -->
+                <div class="mermaid" style="text-align: center; margin-bottom: 15px">
+                  flowchart LR
+                  A[Physical Floor Plan] --> B(Convert to SVG)
+                  B --> C{Hard-Code Web App}
+                  D[(Google Drive)] -->|Host Employee Images| C
+                  C --> E[Host on GitHub Pages]
+                  style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style B fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+                  style C fill:#0f172a,stroke:#14b8a6,stroke-width:2px,color:#fff
+                  style D fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
+                  style E fill:#1e293b,stroke:#14b8a6,stroke-width:2px,color:#fff
                 </div>
               </div>
               <button class="toggle-btn" type="button" onclick="toggle(this)">
