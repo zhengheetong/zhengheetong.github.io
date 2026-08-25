@@ -19,6 +19,12 @@ export const myBootCert = [
 
 export const myProjects = [
   {
+    title: "SSH Server Menu CLI",
+    description:
+      "A fast, interactive Go CLI tool built with Bubble Tea / Lipgloss to easily search, manage, and connect to multiple SSH host servers without memorizing IPs or configs.",
+    link: "https://github.com/zhengheetong/ssh",
+  },
+  {
     title: "Cyberpunk Sudoku (Web)",
     description:
       "A web-based Sudoku solver featuring Neural Net image scanning (OCR) and visual logic algorithms.",
@@ -107,7 +113,7 @@ export const mySkills = [
   },
   {
     title: "Databases",
-    list: ["Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite"],
+    list: ["Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite", "MariaDB"],
   },
   {
     title: "Infrastructure & Tools",
